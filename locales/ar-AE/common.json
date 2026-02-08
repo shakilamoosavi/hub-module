@@ -1,0 +1,233 @@
+{
+  "header": {
+    "title": "وحدة المحور",
+    "currency": "العملة",
+    "language": "اللغة",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "wallet": "المحفظة",
+    "changePassword": "تغيير كلمة المرور",
+    "appointmentBooking": "حجز المواعيد",
+    "currencies": {
+      "USD": "دولار أمريكي",
+      "IRR": "ريال إيراني",
+      "GOLD": "ذهب"
+    },
+    "langs": {
+      "EN": "الإنجليزية",
+      "FA": "الفارسية",
+      "AR": "العربية"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 وحدة المحور. جميع الحقوق محفوظة."
+  },
+  "dropdown": {
+    "placeholder": "اختر...",
+    "search": "بحث...",
+    "loading": "جارٍ التحميل...",
+    "noResults": "لا توجد نتائج"
+  },
+  "services": {
+    "bookOfficeAppointmentBtn": "احجز موعد عيادة",
+    "bookPhoneConsultationBtn": "احصل على استشارة عبر الإنترنت",
+    "subtitle": "اقتراحنا هو أن تقوم دائمًا باختيار الطبيب الأنسب لك من خلال مقارنة الخبرة، التخصص، آراء المستخدمين، والمعلومات الأخرى المتوفرة في صفحات كل طبيب.",
+    "searchTitle": "بحث عن الخدمات",
+    "date": "التاريخ",
+    "country": "الدولة",
+    "province": "المحافظة",
+    "city": "المدينة",
+    "selectCountry": "اختر الدولة",
+    "selectProvince": "اختر المحافظة",
+    "selectCity": "اختر المدينة",
+    "searchBtn": "بحث",
+    "serviceTitle": "الخدمات",
+    "relatedCategory": "قائمة الخدمات هذه تتعلق بفئة: {category}",
+    "filtersLabel": "الفلاتر",
+    "sortLabel": "الترتيب",
+    "categories": {
+      "nail": "صالون الأظافر",
+      "hair": "قص الشعر",
+      "dentistry": "طب الأسنان",
+      "physio": "العلاج الطبيعي"
+    },
+    "filters": {
+      "filters": "الفلاتر",
+      "deleteAllFilters": "حذف جميع الفلاتر",
+      "removeFilter": "حذف الفلتر",
+      "specialty1": "تخصص 1",
+      "specialty2": "تخصص 2",
+      "service1": "خدمة 1",
+      "service2": "خدمة 2",
+      "city1": "طهران",
+      "city2": "أصفهان",
+      "area1": "المنطقة 1",
+      "area2": "المنطقة 2",
+      "insurance1": "تأمين اجتماعي",
+      "insurance2": "سلامت",
+      "tabOffice": "موعد عيادة",
+      "tabPhone": "استشارة هاتفية",
+      "tabText": "استشارة نصية",
+      "tabAI": "استشارة الذكاء الاصطناعي",
+      "specialtyLabel": "تخصص وفوق تخصص",
+      "specialtyPlaceholder": "اختر التخصص المطلوب",
+      "serviceLabel": "الخدمة",
+      "servicePlaceholder": "اختر الخدمة المطلوبة",
+      "cityLabel": "المدينة",
+      "cityPlaceholder": "المدينة",
+      "areaLabel": "الحي",
+      "areaPlaceholder": "اختر الحي",
+      "insuranceLabel": "التأمين",
+      "insurancePlaceholder": "اختر التأمين المطلوب",
+      "dateRangeLabel": "نطاق التاريخ",
+      "dateRangePlaceholder": "اختر نطاق التاريخ",
+      "doctorSexLabel": ":جنس الطبيب",
+      "doctorSexAll": "الكل",
+      "doctorSexMale": "ذكر",
+      "doctorSexFemale": "أنثى",
+      "withAvailableAppointment": "فقط مع موعد متاح",
+      "nearestToLocation": "الأقرب إلى الموقع المطلوب",
+      "instantConsultation": "استشارة فورية"
+    },
+    "sort": {
+      "sortBy": "الترتيب حسب",
+      "default": "افتراضي",
+      "nearest": "أقرب موعد متاح",
+      "mostSuccess": "أكثر المواعيد نجاحًا"
+    },
+    "detail": "التفاصيل",
+    "loading": "جارٍ التحميل...",
+    "loadMore": "تحميل المزيد",
+    "reserve": "احجز",
+    "reserved": "تم حجز الخدمة!",
+    "firstAvailableAppointment": "أول موعد متاح"
+  },
+  "home": {
+    "welcome": "مرحبًا بك في وحدة المحور!",
+    "searchPlaceholder": "ابحث عن الخدمة أو الطبيب",
+    "selectLocation": "اختر المدينة",
+    "searchLocation": "اختر مدينتك",
+    "noLocationFound": "لم يتم العثور على موقع",
+    "doctors": "الأطباء",
+    "successfulAppointment": "موعد ناجح",
+    "cityAndVillage": "المدينة والقرية",
+    "popularSearches": "عمليات البحث الشائعة"
+  },
+  "hubModuleTitle": "وحدة المحور",
+  "hubModuleSubtitle": "حجز المواعيد عبر الإنترنت والاستشارة الطبية للأطباء في إيران",
+  "hubModuleSubtitle2": "ابحث عن طبيبك أو تخصصك أو الخدمة المطلوبة",
+  "appointment": {
+    "selectAndContinue": "اختر واستمر",
+    "step1Title": "لحجز الموعد، يرجى اختيار اليوم المطلوب",
+    "step2Title": "لحجز الموعد، يرجى اختيار عيادة الطبيب",
+    "step3Title": "لحجز الموعد، يرجى اختيار الوقت المطلوب",
+    "noAppointmentsForThisDay": "لا توجد مواعيد متاحة لهذا اليوم",
+    "goToNextAvailableAppointment": "الذهاب إلى الموعد المتاح التالي",
+    "today": "اليوم",
+    "availableAppointments": "{count} موعد",
+    "searchAppointment": "بحث عن موعد",
+    "moreFilters": "المزيد من الفلاتر",
+    "closeFilters": "إغلاق الفلاتر",
+    "medicalSpecialtiesTitle": "أنواع التخصصات الطبية",
+    "officeBtn": "مكتب",
+    "clinicBtn": "عيادة",
+    "legalBtn": "قانوني",
+    "medicalSpecialtiesDesc": "اختر التخصص والمدينة المطلوبة واحجز موعدك",
+    "specialtyLabel": "ما التخصص الذي تبحث عنه؟",
+    "specialtyPlaceholder": "اختر التخصص",
+    "serviceLabel": "ما الخدمة التي تبحث عنها؟",
+    "servicePlaceholder": "اختر الخدمة",
+    "cityLabel": "في أي مدينة تريد موعدًا؟",
+    "cityPlaceholder": "اختر المدينة",
+    "insuranceLabel": "التأمين",
+    "insurancePlaceholder": "اختر التأمين",
+    "doctorSexLabel": ":جنس الطبيب",
+    "doctorSexAll": "الكل",
+    "doctorSexMale": "ذكر",
+    "doctorSexFemale": "أنثى",
+    "withAvailableAppointment": "فقط الأطباء الذين لديهم مواعيد متاحة"
+  },
+  "auth": {
+    "login": {
+      "title": "تسجيل الدخول",
+      "subtitle": "سجّل الدخول باستخدام البريد الإلكتروني أو رقم الهاتف.",
+      "emailTab": "البريد الإلكتروني",
+      "phoneTab": "رقم الهاتف",
+      "emailLabel": "البريد الإلكتروني",
+      "phoneLabel": "رقم الهاتف",
+      "codeLabel": "رمز التحقق",
+      "sendCode": "إرسال الرمز",
+      "login": "تسجيل الدخول",
+      "errors": {
+        "contactRequired": "يرجى إدخال البريد الإلكتروني أو رقم الهاتف.",
+        "codeInvalid": "رمز التحقق غير صالح.",
+        "invalidPhone": "رقم الهاتف غير صالح للبلد المحدد."
+      },
+      "codeSent": "تم إرسال رمز إلى {target}.",
+      "registerLink": "تسجيل حساب جديد",
+      "forgotPasswordLink": "نسيت كلمة المرور؟"
+    },
+    "changePassword": {
+      "title": "تغيير كلمة المرور",
+      "oldPassword": "كلمة المرور القديمة",
+      "newPassword": "كلمة المرور الجديدة",
+      "repeatPassword": "تكرار كلمة المرور الجديدة",
+      "invalidPassword": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل، وتحتوي على أحرف وأرقام إنجليزية ورمز خاص، ولا تحتوي على مسافات أو أحرف غير إنجليزية.",
+      "passwordsDontMatch": "كلمتا المرور غير متطابقتين.",
+      "changeFailed": "فشل تغيير كلمة المرور. يرجى المحاولة مرة أخرى.",
+      "success": "تم تغيير كلمة المرور بنجاح! سيتم تحويلك إلى صفحة الدخول...",
+      "submit": "تغيير كلمة المرور"
+    },
+    "register": {
+      "title": "إنشاء حساب جديد",
+      "subtitle": "أدخل بياناتك الشخصية لنخصّص تجربتك داخل المنصة.",
+      "fields": {
+        "firstName": "الاسم الأول",
+        "lastName": "اسم العائلة",
+        "birthdate": "تاريخ الميلاد",
+        "country": "الدولة",
+        "province": "المحافظة",
+        "city": "المدينة",
+        "email": "البريد الإلكتروني",
+        "phone": "رقم الهاتف",
+        "password": "كلمة المرور",
+        "repeatPassword": "تكرار كلمة المرور"
+      },
+      "errors": {
+        "required": "يرجى استكمال جميع الحقول المطلوبة.",
+        "invalidPassword": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل، وتحتوي على أحرف وأرقام إنجليزية ورمز خاص، ولا تحتوي على مسافات أو أحرف غير إنجليزية.",
+        "passwordsDontMatch": "كلمتا المرور غير متطابقتين."
+      },
+      "submit": "إنشاء الحساب"
+    },
+    "forgot": {
+      "title": "إعادة تعيين الوصول",
+      "subtitle": "اختر البريد أو الهاتف وسنرسل لك رابط الاستعادة.",
+      "emailTab": "البريد الإلكتروني",
+      "phoneTab": "الهاتف",
+      "emailLabel": "البريد الإلكتروني",
+      "phoneLabel": "رقم الهاتف",
+      "errors": {
+        "required": "يرجى إدخال قيمة أولاً."
+      },
+      "success": "تحقّق من الوارد للمتابعة.",
+      "submit": "إرسال رابط الاستعادة"
+    }
+  },
+  "landing": {
+    "slider": {
+      "slide1": {
+        "text": "مرحبًا بك في وحدة المحور!",
+        "alt": "شريحة1"
+      },
+      "slide2": {
+        "text": "متعدد اللغات والعملات والمزيد...",
+        "alt": "شريحة2"
+      },
+      "slide3": {
+        "text": "مدعوم من شكيلا :)",
+        "alt": "شريحة3"
+      }
+    }
+  }
+}

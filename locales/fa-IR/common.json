@@ -1,0 +1,235 @@
+{
+  "header": {
+    "title": "هاب ماژول",
+    "currency": "ارز",
+    "language": "زبان",
+    "login": "ورود کاربران",
+    "logout": "خروج",
+    "wallet": "کیف پول",
+    "changePassword": "تغییر رمز عبور",
+    "appointmentBooking": "نوبت‌دهی",
+    "currencies": {
+      "USD": "دلار آمریکا",
+      "IRR": "ریال ایران",
+      "GOLD": "طلا"
+    },
+    "langs": {
+      "EN": "انگلیسی",
+      "FA": "فارسی",
+      "AR": "عربی"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 هاب ماژول. همه حقوق محفوظ است."
+  },
+  "dropdown": {
+    "placeholder": "انتخاب...",
+    "search": "جستجو...",
+    "loading": "در حال بارگذاری...",
+    "noResults": "نتیجه‌ای یافت نشد"
+  },
+  "services": {
+    "bookOfficeAppointmentBtn": "نوبت مطب بگیرید",
+    "bookPhoneConsultationBtn": "مشاوره آنلاین بگیرید",
+    "subtitle": "پیشنهاد ما این است که همیشه با مقایسه تجربه، تخصص، نظرات کاربران و سایر اطلاعات موجود در صفحات هر پزشک، مناسب‌ترین پزشک را برای خود انتخاب نمایید.",
+    "searchTitle": "جستجوی خدمات",
+    "date": "تاریخ",
+    "country": "کشور",
+    "province": "استان",
+    "city": "شهر",
+    "selectCountry": "انتخاب کشور",
+    "selectProvince": "انتخاب استان",
+    "selectCity": "انتخاب شهر",
+    "searchBtn": "جستجو",
+    "serviceTitle": "خدمات",
+    "relatedCategory": "این لیست خدمات مربوط به دسته: {category} است",
+    "filtersLabel": "فیلترها",
+    "sortLabel": "مرتب‌سازی",
+    "categories": {
+      "nail": "خدمات ناخن",
+      "hair": "کوتاهی مو",
+      "dentistry": "دندانپزشکی",
+      "physio": "فیزیوتراپی"
+    },
+    "filters": {
+      "filters": "فیلترها",
+      "deleteAllFilters": "حذف همه فیلترها",
+      "removeFilter": "حذف فیلتر",
+      "specialty1": "تخصص 1",
+      "specialty2": "تخصص 2",
+      "service1": "خدمت 1",
+      "service2": "خدمت 2",
+      "city1": "تهران",
+      "city2": "اصفهان",
+      "area1": "منطقه 1",
+      "area2": "منطقه 2",
+      "insurance1": "تامین اجتماعی",
+      "insurance2": "سلامت",
+      "tabOffice": "نوبت کلینیک",
+      "tabPhone": "مشاوره تلفنی",
+      "tabText": "مشاوره متنی",
+      "tabAI": "مشاوره هوش مصنوعی",
+      "specialtyLabel": "تخصص و فوق تخصص",
+      "specialtyPlaceholder": "تخصص موردنظر را انتخاب کنید",
+      "serviceLabel": "خدمات",
+      "servicePlaceholder": "خدمت مورد نظر را انتخاب کنید",
+      "cityLabel": "شهر",
+      "cityPlaceholder": "شهر",
+      "areaLabel": "منطقه",
+      "areaPlaceholder": "منطقه",
+      "insuranceLabel": "بیمه",
+      "insurancePlaceholder": "بیمه مورد نظر را انتخاب کنید",
+      "dateRangeLabel": "بازه زمانی",
+      "dateRangePlaceholder": "بازه زمانی را انتخاب کنید",
+      "doctorSexLabel": "جنسیت پزشک:",
+      "doctorSexAll": "همه",
+      "doctorSexMale": "مرد",
+      "doctorSexFemale": "زن",
+      "withAvailableAppointment": "فقط دارای نوبت",
+      "nearestToLocation": "نزدیکترین ها به موقعیت مکانی دلخواه",
+      "instantConsultation": "مشاوره فوری"
+    },
+    "sort": {
+      "sortBy": "مرتب‌سازی بر اساس",
+      "default": "پیش‌فرض",
+      "nearest": "نزدیک‌ترین نوبت آزاد",
+      "mostSuccess": "بیش‌ترین نوبت موفق"
+    },
+    "detail": "جزئیات",
+    "loading": "در حال بارگذاری...",
+    "loadMore": "بارگذاری بیشتر",
+    "reserve": "رزرو",
+    "reserved": "سرویس رزرو شد!",
+    "firstAvailableAppointment": "اولین نوبت آزاد"
+  },
+  "home": {
+    "welcome": "به هاب ماژول خوش آمدید!",
+    "searchPlaceholder": "خدمت یا پزشک را جستجو کنید",
+    "selectLocation": "انتخاب شهر",
+    "searchLocation": "شهر خود را انتخاب کنید",
+    "noLocationFound": "موردی یافت نشد",
+    "doctors": "پزشک",
+    "successfulAppointment": "نوبت موفق",
+    "cityAndVillage": "شهر و روستا",
+    "popularSearches": "جستجوهای پرطرفدار"
+  },
+  "hubModuleTitle": "هاب ماژول",
+  "hubModuleSubtitle": "نوبت‌دهی اینترنتی و مشاوره آنلاین پزشکان ایران",
+  "hubModuleSubtitle2": "پزشک، تخصص یا خدمت مورد نظر خود را جستجو کنید",
+  "appointment": {
+    "selectAndContinue": "انتخاب و ادامه",
+    "step1Title": "برای نوبت‌دهی لطفا روز مورد نظر خود را انتخاب کنید",
+    "step2Title": "برای نوبت‌دهی لطفا مطب پزشک را انتخاب کنید",
+    "step3Title": "برای نوبت‌دهی لطفا ساعت مورد نظر خود را انتخاب کنید",
+    "noAppointmentsForThisDay": "در حال حاضر برای این روز نوبتی تعریف نشده است",
+    "goToNextAvailableAppointment": "برو به اولین نوبت آزاد بعدی",
+    "today": "امروز",
+    "availableAppointments": "{count} نوبت",
+    "searchAppointment": "جستجوی نوبت",
+    "moreFilters": "فیلترهای بیشتر",
+    "closeFilters": "بستن فیلترها",
+    "medicalSpecialtiesTitle": "انواع تخصص های پزشکی",
+    "officeBtn": "مطب",
+    "clinicBtn": "درمانگاه",
+    "legalBtn": "وکالت",
+    "medicalSpecialtiesDesc": "تخصص و شهر مورد نظرتان را انتخاب کنید و نوبت بگیرید",
+      "title": "نوبت‌دهی",
+      "description": "نوبت خود را آنلاین و سریع رزرو کنید.",
+    "specialtyLabel": "به دنبال چه تخصصی هستید؟",
+    "specialtyPlaceholder": "انتخاب تخصص",
+    "serviceLabel": "به دنبال چه خدمتی هستید؟",
+    "servicePlaceholder": "انتخاب خدمت",
+    "cityLabel": "در کدام شهر نوبت میخواهید؟",
+    "cityPlaceholder": "انتخاب شهر",
+    "insuranceLabel": "بیمه",
+    "insurancePlaceholder": "انتخاب بیمه",
+    "doctorSexLabel": "جنسیت پزشک:",
+    "doctorSexAll": "همه",
+    "doctorSexMale": "مرد",
+    "doctorSexFemale": "زن",
+    "withAvailableAppointment": "فقط پزشکان دارای نوبت"
+  },
+  "auth": {
+    "login": {
+      "title": "ورود",
+      "subtitle": "با ایمیل یا شماره موبایل وارد شوید.",
+      "emailTab": "ایمیل",
+      "phoneTab": "شماره موبایل",
+      "emailLabel": "آدرس ایمیل",
+      "phoneLabel": "شماره موبایل",
+      "codeLabel": "کد تایید",
+      "sendCode": "ارسال کد",
+      "login": "ورود",
+      "errors": {
+        "contactRequired": "ایمیل یا شماره موبایل را وارد کنید.",
+        "codeInvalid": "کد تایید نامعتبر است.",
+        "invalidPhone": "شماره موبایل برای کشور انتخاب‌شده نامعتبر است."
+      },
+      "codeSent": "کد به {target} ارسال شد.",
+      "registerLink": "ثبت نام",
+      "forgotPasswordLink": "فراموشی رمز عبور؟"
+    },
+    "changePassword": {
+      "title": "تغییر رمز عبور",
+      "oldPassword": "رمز عبور قبلی",
+      "newPassword": "رمز عبور جدید",
+      "repeatPassword": "تکرار رمز عبور جدید",
+      "invalidPassword": "رمز عبور باید حداقل ۸ کاراکتر، شامل حروف انگلیسی، عدد، کاراکتر ویژه و بدون فاصله باشد.",
+      "passwordsDontMatch": "رمزهای عبور مطابقت ندارند.",
+      "changeFailed": "تغییر رمز عبور ناموفق بود. دوباره تلاش کنید.",
+      "success": "رمز عبور با موفقیت تغییر کرد! در حال انتقال به ورود...",
+      "submit": "تغییر رمز عبور"
+    },
+    "register": {
+      "title": "ایجاد حساب کاربری",
+      "subtitle": "اطلاعات شخصی خود را وارد کنید تا تجربه شما شخصی‌سازی شود.",
+      "fields": {
+        "firstName": "نام",
+        "lastName": "نام خانوادگی",
+        "birthdate": "تاریخ تولد",
+        "country": "کشور",
+        "province": "استان",
+        "city": "شهر",
+        "email": "آدرس ایمیل",
+        "phone": "شماره موبایل",
+        "password": "رمز عبور",
+        "repeatPassword": "تکرار رمز عبور"
+      },
+      "errors": {
+        "required": "لطفاً همه فیلدهای ضروری را تکمیل کنید.",
+        "invalidPassword": "رمز عبور باید حداقل ۸ کاراکتر، شامل حروف انگلیسی، عدد، کاراکتر ویژه و بدون فاصله باشد.",
+        "passwordsDontMatch": "رمزهای عبور مطابقت ندارند."
+      },
+      "submit": "ایجاد حساب"
+    },
+    "forgot": {
+      "title": "بازیابی دسترسی",
+      "subtitle": "ایمیل یا شماره موبایل را انتخاب کنید تا لینک بازیابی ارسال شود.",
+      "emailTab": "ایمیل",
+      "phoneTab": "موبایل",
+      "emailLabel": "آدرس ایمیل",
+      "phoneLabel": "شماره موبایل",
+      "errors": {
+        "required": "ابتدا یک مقدار وارد کنید."
+      },
+      "success": "لطفاً صندوق پیام خود را بررسی کنید.",
+      "submit": "ارسال لینک بازیابی"
+    }
+  },
+  "landing": {
+    "slider": {
+      "slide1": {
+        "text": "به هاب ماژول خوش آمدید!",
+        "alt": "اسلاید1"
+      },
+      "slide2": {
+        "text": "چندزبانه، چندارزی و ...",
+        "alt": "اسلاید2"
+      },
+      "slide3": {
+        "text": "شکیلا :)",
+        "alt": "اسلاید3"
+      }
+    }
+  }
+}

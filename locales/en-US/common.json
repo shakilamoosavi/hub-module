@@ -1,0 +1,235 @@
+{
+  "header": {
+    "title": "Hub Module",
+    "currency": "Currency",
+    "language": "Language",
+    "login": "Login",
+    "logout": "Logout",
+    "wallet": "Wallet",
+    "changePassword": "Change Password",
+    "appointmentBooking": "Appointment Booking",
+    "currencies": {
+      "USD": "USD",
+      "IRR": "IRR",
+      "GOLD": "Gold"
+    },
+    "langs": {
+      "EN": "English",
+      "FA": "Persian",
+      "AR": "Arabic"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Hub Module. All rights reserved."
+  },
+  "dropdown": {
+    "placeholder": "Select...",
+    "search": "Search...",
+    "loading": "Loading...",
+    "noResults": "No results found"
+  },
+  "services": {
+    "bookOfficeAppointmentBtn": "Book office appointment",
+    "bookPhoneConsultationBtn": "Get online consultation",
+    "subtitle": "Our suggestion is to always choose the most suitable doctor for yourself by comparing experience, specialty, user reviews, and other information available on each doctor's pages.",
+    "searchTitle": "Search Services",
+    "date": "Date",
+    "country": "Country",
+    "province": "Province",
+    "city": "City",
+    "selectCountry": "Select country",
+    "selectProvince": "Select province",
+    "selectCity": "Select city",
+    "searchBtn": "Search",
+    "serviceTitle": "Services",
+    "relatedCategory": "This service list is related to: {category}",
+    "filtersLabel": "Filters",
+    "sortLabel": "Sort",
+    "categories": {
+      "nail": "Nail Services",
+      "hair": "Hair Cut",
+      "dentistry": "Dentistry",
+      "physio": "Physiotherapy"
+    },
+    "filters": {
+      "filters": "Filters",
+      "deleteAllFilters": "Delete all filters",
+      "removeFilter": "Remove filter",
+      "specialty1": "Specialty 1",
+      "specialty2": "Specialty 2",
+      "service1": "Service 1",
+      "service2": "Service 2",
+      "city1": "Tehran",
+      "city2": "Isfahan",
+      "area1": "Area 1",
+      "area2": "Area 2",
+      "insurance1": "Social Security",
+      "insurance2": "Salamat",
+      "tabOffice": "Clinic Appointment",
+      "tabPhone": "Phone Consultation",
+      "tabText": "Text Consultation",
+      "tabAI": "AI Consultation",
+      "specialtyLabel": "Specialty & Subspecialty",
+      "specialtyPlaceholder": "Select desired specialty",
+      "serviceLabel": "Service",
+      "servicePlaceholder": "Select desired service",
+      "cityLabel": "City",
+      "cityPlaceholder": "City",
+      "areaLabel": "Area",
+      "areaPlaceholder": "Select area",
+      "insuranceLabel": "Insurance",
+      "insurancePlaceholder": "Select desired insurance",
+      "dateRangeLabel": "Date Range",
+      "dateRangePlaceholder": "Select date range",
+      "doctorSexLabel": "Doctor gender:",
+      "doctorSexAll": "All",
+      "doctorSexMale": "Male",
+      "doctorSexFemale": "Female",
+      "withAvailableAppointment": "Only with available appointment",
+      "nearestToLocation": "Nearest to desired location",
+      "instantConsultation": "Instant consultation"
+    },
+    "sort": {
+      "sortBy": "Sort by",
+      "default": "Default",
+      "nearest": "Nearest available appointment",
+      "mostSuccess": "Most successful appointments"
+    },
+    "detail": "Detail",
+    "loading": "Loading...",
+    "loadMore": "Load more",
+    "reserve": "Reserve",
+    "reserved": "Service reserved!",
+    "firstAvailableAppointment": "First available appointment"
+  },
+  "home": {
+    "welcome": "Welcome to Hub Module!",
+    "searchPlaceholder": "Search for service or doctor",
+    "selectLocation": "Select city",
+    "searchLocation": "Select your city",
+    "noLocationFound": "No results found",
+    "doctors": "Doctors",
+    "successfulAppointment": "Successful appointment",
+    "cityAndVillage": "City & village",
+    "popularSearches": "Popular searches"
+  },
+  "hubModuleTitle": "Hub Module",
+  "hubModuleSubtitle": "Online appointment booking and doctor consultation in Iran",
+  "hubModuleSubtitle2": "Search for your doctor, specialty, or service",
+  "appointment": {
+    "selectAndContinue": "Select and Continue",
+    "step1Title": "For booking, please select your desired day",
+    "step2Title": "For booking, please select the doctor's clinic",
+    "step3Title": "For booking, please select your desired time",
+    "noAppointmentsForThisDay": "No appointments are defined for this day.",
+    "goToNextAvailableAppointment": "Go to next available appointment",
+    "today": "Today",
+    "availableAppointments": "{count} slot(s)",
+    "searchAppointment": "Search Appointment",
+    "moreFilters": "More Filters",
+    "closeFilters": "Close Filters",
+    "medicalSpecialtiesTitle": "Types of Medical Specialties",
+    "officeBtn": "Office",
+    "clinicBtn": "Clinic",
+    "legalBtn": "Legal",
+    "medicalSpecialtiesDesc": "Select your desired specialty and city to book an appointment",
+    "title": "Appointment Booking",
+    "description": "Book your appointment online quickly and easily.",
+    "specialtyLabel": "What specialty are you looking for?",
+    "specialtyPlaceholder": "Select specialty",
+    "serviceLabel": "What service are you looking for?",
+    "servicePlaceholder": "Select service",
+    "cityLabel": "In which city do you want an appointment?",
+    "cityPlaceholder": "Select city",
+    "insuranceLabel": "Insurance",
+    "insurancePlaceholder": "Select insurance",
+    "doctorSexLabel": "Doctor gender:",
+    "doctorSexAll": "All",
+    "doctorSexMale": "Male",
+    "doctorSexFemale": "Female",
+    "withAvailableAppointment": "Only doctors with available appointments"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "subtitle": "Sign in with your email or phone number.",
+      "emailTab": "Email",
+      "phoneTab": "Phone",
+      "emailLabel": "Email address",
+      "phoneLabel": "Phone number",
+      "codeLabel": "Verification code",
+      "sendCode": "Send Code",
+      "login": "Login",
+      "errors": {
+        "contactRequired": "Please enter your email or phone.",
+        "codeInvalid": "Invalid verification code.",
+        "invalidPhone": "Invalid phone number for the selected country."
+      },
+      "codeSent": "A code was sent to {target}.",
+      "registerLink": "Register",
+      "forgotPasswordLink": "Forgot password?"
+    },
+    "changePassword": {
+      "title": "Change Password",
+      "oldPassword": "Old password",
+      "newPassword": "New password",
+      "repeatPassword": "Repeat new password",
+      "invalidPassword": "Password must be at least 8 characters, contain English letters, numbers, special characters, and no spaces.",
+      "passwordsDontMatch": "Passwords do not match.",
+      "changeFailed": "Failed to change password. Please try again.",
+      "success": "Password changed successfully! Redirecting to login...",
+      "submit": "Change password"
+    },
+    "register": {
+      "title": "Create your account",
+      "subtitle": "Enter your personal information to personalize your experience.",
+      "fields": {
+        "firstName": "First name",
+        "lastName": "Last name",
+        "birthdate": "Birthdate",
+        "country": "Country",
+        "province": "Province",
+        "city": "City",
+        "email": "Email address",
+        "phone": "Phone number",
+        "password": "Password",
+        "repeatPassword": "Repeat password"
+      },
+      "errors": {
+        "required": "Please complete all required fields.",
+        "invalidPassword": "Password must be at least 8 characters, contain English letters, numbers, special characters, and no spaces.",
+        "passwordsDontMatch": "Passwords do not match."
+      },
+      "submit": "Create account"
+    },
+    "forgot": {
+      "title": "Reset your access",
+      "subtitle": "Choose email or phone and we will send you a reset link.",
+      "emailTab": "Email",
+      "phoneTab": "Phone",
+      "emailLabel": "Email address",
+      "phoneLabel": "Phone number",
+      "errors": {
+        "required": "Please provide a value first."
+      },
+      "success": "Check your inbox for the next step.",
+      "submit": "Send reset link"
+    }
+  },
+  "landing": {
+    "slider": {
+      "slide1": {
+        "text": "Welcome to Hub Module!",
+        "alt": "Slide1"
+      },
+      "slide2": {
+        "text": "Multi-language, multi-currency, and more.",
+        "alt": "Slide2"
+      },
+      "slide3": {
+        "text": "Powered by Shakila :)",
+        "alt": "Slide3"
+      }
+    }
+  }
+}
