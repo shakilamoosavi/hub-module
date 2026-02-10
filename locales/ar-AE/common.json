@@ -87,7 +87,11 @@
       "doctorSexFemale": "أنثى",
       "withAvailableAppointment": "فقط مع موعد متاح",
       "nearestToLocation": "الأقرب إلى الموقع المطلوب",
-      "instantConsultation": "استشارة فورية"
+      "fromDateLabel": "من التاريخ",
+      "toDateLabel": "إلى التاريخ",
+      "fromDatePlaceholder": "اختر تاريخ بدء البحث",
+      "toDatePlaceholder": "اختر تاريخ انتهاء البحث",
+      "clear": "مسح"
     },
     "sort": {
       "sortBy": "الترتيب حسب",
@@ -100,7 +104,8 @@
     "loadMore": "تحميل المزيد",
     "reserve": "احجز",
     "reserved": "تم حجز الخدمة!",
-    "firstAvailableAppointment": "أول موعد متاح"
+    "firstAvailableAppointment": "أول موعد متاح",
+    "moreOffices": "+{count} عيادات أخرى"
   },
   "home": {
     "welcome": "مرحبًا بك في وحدة المحور!",

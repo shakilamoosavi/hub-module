@@ -67,3 +67,39 @@ body {
 button {
   cursor: pointer;
 }
+
+
+
+
+/*
+  Auto-hide scrollbar utility
+  - Use `scrollbar-hide` to permanently hide scrollbars (still scrollable).
+  - Use `scrollbar-auto-hidden` to hide scrollbars by default and show a thin
+    overlay thumb when the container is hovered (no JS required). This approximates
+    macOS/Chrome overlay scrollbar behavior for scrollable containers.
+*/
+.scrollbar-auto-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox: hide */
+}
+.scrollbar-auto-hidden::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+.scrollbar-auto-hidden::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 9999px;
+}
+/* On hover, show a thin thumb */
+.scrollbar-auto-hidden:hover {
+  scrollbar-width: thin; /* Firefox */
+}
+.scrollbar-auto-hidden:hover::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.22);
+}
+@media (prefers-color-scheme: dark) {
+  .scrollbar-auto-hidden:hover::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.16);
+  }
+}

@@ -87,7 +87,11 @@
       "doctorSexFemale": "Female",
       "withAvailableAppointment": "Only with available appointment",
       "nearestToLocation": "Nearest to desired location",
-      "instantConsultation": "Instant consultation"
+      "fromDateLabel": "From date",
+      "toDateLabel": "To date",
+      "fromDatePlaceholder": "Select start date for search",
+      "toDatePlaceholder": "Select end date for search",
+      "clear": "Clear"
     },
     "sort": {
       "sortBy": "Sort by",
@@ -100,7 +104,8 @@
     "loadMore": "Load more",
     "reserve": "Reserve",
     "reserved": "Service reserved!",
-    "firstAvailableAppointment": "First available appointment"
+    "firstAvailableAppointment": "First available appointment",
+    "moreOffices": "+{count} offices"
   },
   "home": {
     "welcome": "Welcome to Hub Module!",

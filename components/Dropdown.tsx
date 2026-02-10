@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-
 import { useTranslations } from 'next-intl';
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 interface DropdownProps {
   label?: string;
@@ -99,10 +99,8 @@ const Dropdown: React.FC<DropdownProps> = ({
           {options.find(o => o.value === value)?.label || placeholder || t('placeholder', { defaultValue: 'Select...' })}
         </span>
         <span
-          className={`ml-2 transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
-          style={{ display: 'inline-block', color: 'var(--color-gray-200)' }}
-        >
-          ▼
+          className={`ml-2 transition-transform duration-200 text-gray-400 inline-block ${open ? 'rotate-180' : ''}`}>
+          <ChevronDownIcon className="h-5 w-5" />
         </span>
       </div>
       {open && (

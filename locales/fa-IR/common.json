@@ -87,7 +87,11 @@
       "doctorSexFemale": "زن",
       "withAvailableAppointment": "فقط دارای نوبت",
       "nearestToLocation": "نزدیکترین ها به موقعیت مکانی دلخواه",
-      "instantConsultation": "مشاوره فوری"
+      "fromDateLabel": "از تاریخ",
+      "toDateLabel": "تا تاریخ",
+      "fromDatePlaceholder": "تاریخ شروع جستجو را انتخاب کنید",
+      "toDatePlaceholder": "تاریخ پایان جستجو را انتخاب کنید",
+      "clear": "پاک کردن"
     },
     "sort": {
       "sortBy": "مرتب‌سازی بر اساس",
@@ -100,7 +104,8 @@
     "loadMore": "بارگذاری بیشتر",
     "reserve": "رزرو",
     "reserved": "سرویس رزرو شد!",
-    "firstAvailableAppointment": "اولین نوبت آزاد"
+    "firstAvailableAppointment": "اولین نوبت آزاد",
+    "moreOffices": "+{count} مطب دیگر"
   },
   "home": {
     "welcome": "به هاب ماژول خوش آمدید!",
@@ -133,8 +138,8 @@
     "clinicBtn": "درمانگاه",
     "legalBtn": "وکالت",
     "medicalSpecialtiesDesc": "تخصص و شهر مورد نظرتان را انتخاب کنید و نوبت بگیرید",
-      "title": "نوبت‌دهی",
-      "description": "نوبت خود را آنلاین و سریع رزرو کنید.",
+    "title": "نوبت‌دهی",
+    "description": "نوبت خود را آنلاین و سریع رزرو کنید.",
     "specialtyLabel": "به دنبال چه تخصصی هستید؟",
     "specialtyPlaceholder": "انتخاب تخصص",
     "serviceLabel": "به دنبال چه خدمتی هستید؟",

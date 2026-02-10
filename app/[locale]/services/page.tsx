@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useParams, useSearchParams } from 'next/navigation';
@@ -11,6 +11,8 @@ import ServicesFilter from '../../../components/ServicesFilter';
 import ServiceSort from '../../../components/ServiceSort';
 import { MapPinIcon, ArrowLeftIcon, BuildingLibraryIcon, PhoneIcon } from '@heroicons/react/24/solid';
 import { describe } from 'node:test';
+import moment from 'moment';
+import momentJalaali from 'moment-jalaali';
 
 function BottomSheetModal({ open, onClose, children, title }: { open: boolean; onClose: () => void; children: React.ReactNode; title: string }) {
   if (!open) return null;
@@ -166,23 +168,75 @@ export default function ServicesPage() {
   const [activeService, setActiveService] = useState<ReturnType<typeof generateMockServices>[number] | null>(null);
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [mobileSortOpen, setMobileSortOpen] = useState(false);
-  const appointmentDates = [
-    { date: '2026-02-08', availableAppointments: 10 },
-    { date: '2026-02-09', availableAppointments: 7 },
-    { date: '2026-02-10', availableAppointments: 12 },
-    { date: '2026-02-11', availableAppointments: 0 },
-    { date: '2026-02-12', availableAppointments: 8 },
-    { date: '2026-02-13', availableAppointments: 6 },
-    { date: '2026-02-14', availableAppointments: 9 },
-    { date: '2026-02-15', availableAppointments: 0 },
-    { date: '2026-02-16', availableAppointments: 11 },
-    { date: '2026-02-17', availableAppointments: 3 },
-    { date: '2026-02-18', availableAppointments: 8 },
-    { date: '2026-02-19', availableAppointments: 0 },
-    { date: '2026-02-20', availableAppointments: 5 },
-    { date: '2026-02-21', availableAppointments: 1 },
-    { date: '2026-02-22', availableAppointments: 10 },
-  ];
+  const appointmentDates = useMemo(() => {
+    // Read from/to from route params (ServicesFilter writes `fromDate` and `toDate`)
+    const fromParam = searchParams.get('fromDate');
+    const toParam = searchParams.get('toDate');
+    const localeIsFa = locale?.startsWith('fa');
+
+    const replacePersianDigits = (s: string) => {
+      if (!s) return s;
+      // Persian digits \u06F0-\u06F9 and Arabic-Indic \u0660-\u0669
+      return s.replace(/[\u06F0-\u06F9\u0660-\u0669]/g, (ch) => {
+        const code = ch.charCodeAt(0);
+        // Persian
+        if (code >= 0x06F0 && code <= 0x06F9) return String(code - 0x06F0);
+        // Arabic-Indic
+        if (code >= 0x0660 && code <= 0x0669) return String(code - 0x0660);
+        return ch;
+      });
+    };
+
+    // Determine start (fromDate) and end (toDate)
+    const fromClean = fromParam ? replacePersianDigits(fromParam) : null;
+    const toClean = toParam ? replacePersianDigits(toParam) : null;
+
+    let start = fromClean ? moment(fromClean, 'YYYY-MM-DD', true) : moment();
+    // If strict parse failed and locale is fa, try jalaali parse
+    if (fromClean && !start.isValid() && localeIsFa) {
+      try {
+        const mj = momentJalaali(fromClean, 'jYYYY-jMM-jDD', true);
+        if (mj.isValid()) start = moment(mj.toDate());
+      } catch (_) {
+        // ignore
+      }
+    }
+    if (!fromClean) start = moment();
+
+    let end: moment.Moment | null = null;
+    if (toClean && fromClean) {
+      end = moment(toClean, 'YYYY-MM-DD', true);
+      if (!end.isValid() && localeIsFa) {
+        try {
+          const mj = momentJalaali(toClean, 'jYYYY-jMM-jDD', true);
+          if (mj.isValid()) end = moment(mj.toDate());
+        } catch (_) {
+          // ignore
+        }
+      }
+    }
+    if (!end) {
+      // If toDate missing or invalid, set to 30 days after start
+      end = moment(start).add(30, 'days');
+    }
+
+    // Validate
+    if (!start.isValid()) start = moment();
+    if (!end.isValid() || end.isBefore(start)) end = moment(start).add(30, 'days');
+
+    // Cap to reasonable amount to avoid huge arrays
+    const maxDays = 365;
+    const daysCount = Math.min(end.diff(start, 'days') + 1, maxDays);
+    const arr: { date: string; availableAppointments: number }[] = [];
+    for (let i = 0; i < daysCount; i++) {
+      const d = moment(start).add(i, 'days');
+      // Deterministic availability: vary by day number so UI looks realistic
+      const availableAppointments = (d.date() % 7) === 0 ? 0 : ((d.date() % 5) + 1) * 2;
+      // Force English digits in the ISO date string so `new Date(...)` parses it correctly
+      arr.push({ date: d.locale('en').format('YYYY-MM-DD'), availableAppointments });
+    }
+    return arr;
+  }, [searchParams.toString()]);
 
   const initialSearch = {
     date: searchParams.get('date') || undefined,
@@ -311,15 +365,18 @@ export default function ServicesPage() {
                   ))}
                 </div>
                 <div className="py-2 flex items-center gap-2">
-                  <div className="font-semibold flex flex-col gap-2">
-                    {
-                      service.address.map((addr, idx) => (
-                        <span key={idx} className="text-sm text-gray-500 border border-gray-200 rounded-2xl px-4 py-2 flex">
-                          <MapPinIcon className="w-5 h-5 text-blue-500 me-2" />
-                          {addr.description[getLangFromLocale(locale)]}
-                        </span>
-                      ))
-                    }
+                  <div className="font-semibold flex gap-2">
+                    {service.address.length > 0 && (
+                      <span className="text-sm text-gray-500 border border-gray-200 rounded-2xl px-4 py-2 flex">
+                        <MapPinIcon className="w-5 h-5 text-blue-500 me-2" />
+                        {service.address[0].description[getLangFromLocale(locale)]}
+                      </span>
+                    )}
+                    {service.address.length > 1 && (
+                      <span className="text-sm text-gray-500 border border-gray-200 rounded-2xl px-4 py-2 flex">
+                        {t('services.moreOffices', { count: service.address.length - 1 })}
+                      </span>
+                    )}
                   </div>
                 </div>
                 <div className="py-2">

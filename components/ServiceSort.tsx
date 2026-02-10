@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 const SORTS = [
   { key: "default", labelKey: "default" },
   { key: "nearest", labelKey: "nearest" },
-  { key: "mostSuccess", labelKey: "mostSuccess" },
+  // { key: "mostSuccess", labelKey: "mostSuccess" },
 ];
 
 export default function ServiceSort({ selected, onChange }: { selected: string; onChange: (key: string) => void }) {

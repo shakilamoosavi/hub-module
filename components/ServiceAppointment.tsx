@@ -51,6 +51,23 @@ export default function ServiceAppointment({ dates, addresses, lang, serviceName
   // Store mock times for each date
   const [mockTimesByDate, setMockTimesByDate] = useState<{ [date: string]: { time: string; isAvailable: boolean }[] }>({});
 
+  // Auto-select the only available date and go next if only one date with available appointments
+  React.useEffect(() => {
+    if (
+      dates.length === 1 &&
+      dates[0].availableAppointments > 0 &&
+      !selectedDate
+    ) {
+      setSelectedDate(dates[0]);
+      if (addresses.length === 1) {
+        setSelectedAddressIdx(0);
+        setStep(3);
+      } else {
+        setStep(2);
+      }
+    }
+  }, [dates, addresses.length, selectedDate]);
+
   // Generate mock times for a date if not already present
   const getMockTimes = (date: string) => {
     if (!mockTimesByDate[date]) {
